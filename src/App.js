@@ -6,7 +6,7 @@ import Screen2 from "./components/Screen2/Screen2";
 import Contributors from "./components/Contributors/Contributors";
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<About />}></Route>
