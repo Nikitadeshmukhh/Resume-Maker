@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.closed_btn{
+  background-color: var(--purple-light);
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 260px;
+
+}
+
+
+
+/* murari-css-start */
+
+.navbar-expand-lg {
+   z-index: 9;
+}
+
+
+ 
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px){
+
+.hero-wrapper .hero-image {
+   max-width: 600px;
+}
+
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .fan__container .head__box{
+  width: 100%;
+}
+.fan__container .content__box{
+  width: 100%;
+}
+
+.hero-banner .con__btn{
+  width: 100%;
+}
+
+
+
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+.navbar .navbar-brand img {
+  position: relative;
+  left: 15px;
+  top: 0;
+}
+
+.hero-wrapper .rectangle_back {
+ 
+  /* left: 10px !important;
+  max-width: 100% !important;
+  top: 0px !important; */
+
+  display: none;
+
+
+}
+
+
+.hero-wrapper nav.navbar.navbar-expand-lg.onmobile_nav.navbar-light{
+  background: #10005c;
+
+}
+
+.navbar {
+  padding: 0px 0px !important;
+   max-width: 100% !important;
+  
+}
+ .onmobile_nav .w-100 {
+  position: relative;
+}
+.onmobile_nav .w-100 .col-5.col-sm-3 {
+  position: absolute;
+}
+.onmobile_nav .w-100 .col-5.text-end {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  align-items: center;
+}
+.hero-wrapper .rectangle_back img {
+  width: 104%;
+}
+.onmobile_nav .w-100 .col-5.text-end a.search-link.nav-link {
+  margin-right: 15px;
+}
+
+
+
+.fan__container .head__box{
+  width: 100%;
+}
+.fan__container .content__box{
+  width: 100%;
+}
+.hero-banner .con__btn{
+  width: 100%;
+}
+
+
+
+
+
+ 
+}
+
+/* murari-css-end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

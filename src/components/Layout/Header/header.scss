@@ -1,0 +1,145 @@
+.navbar {
+  padding: 12px 0px;
+  height: 90px;
+  max-width: 1291px;
+  margin: 0 auto;
+
+ 
+
+  .container-fluid {
+    @media screen and (max-width: 767px) {
+      padding-right: 0;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 0;
+    }
+  }
+  .navbar-brand {
+    img {
+      max-width: 80px;
+      @media screen and (max-width: 767px) {
+        // max-width: 130px;
+        position: relative;
+        right: 515px;
+        top: 13px;
+      }
+    }
+  }
+  .navbar-nav {
+    @media screen and (max-width: 767px) {
+     }
+    .nav-link {
+      padding: 0px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--white-color);
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
+      &:not(:last-child) {
+        padding-right: 70px;
+        @media screen and (max-width: 767px) {
+          padding-right: 20px;
+        }
+      }
+      &.search-link {
+        padding-right: 50px;
+        @media screen and (max-width: 767px) {
+          padding-right: 20px;
+        }
+      }
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+  .navbar-toggler {
+    background-color: var(--white-color);
+    padding: 5px 10px;
+    .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary {
+    letter-spacing: 0.1em;
+    @media screen and (max-width: 767px) {
+      border-radius: 12px;
+      padding: 12px 15px;
+      font-size: 13px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.onmobile_nav{
+  display: none;
+}
+
+
+
+
+
+
+// nav bar mobile responsive //
+
+// @media only screen and (min-width: 320px) and (max-width: 767px){
+//   nav.navbar.navbar-expand-lg.onmobile_nav.navbar-light {
+//     display: block !important;
+// }
+// .onwebsite_nav {
+//   display: none;
+// }
+// .rectangle_back{
+//   height: auto;
+//   position: relative;
+//   left: 15px;
+//   max-width: 50%;
+//   top: -11px;
+// }
+
+ 
+
+// .navbar .navbar-brand img {
+//   max-width: 130px;
+//   position: absolute;
+//   top: 21px;
+//   width: 128px;
+//   left: 30px;
+// }
+
+// a.search-link {
+//   position: absolute;
+//   top: 32px;
+//   right: 167px;
+// }
+
+// button.navbar-toggler.collapsed {
+//   position: absolute;
+//   top: 30px;
+//   right: 106px;
+// }
+
+// button.navbar-toggler {
+//   position: absolute;
+//   top: 31px;
+//   right: 108px;
+// }
+
+// .ms-auto.align-items-center.navbar-nav {
+//   display: block;
+//   position: relative;
+//   justify-content: center;
+//   left: 57px;
+// }
+
+// }

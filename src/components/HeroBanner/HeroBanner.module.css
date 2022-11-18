@@ -1,0 +1,59 @@
+.container {
+  padding: 50px 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: rgb(238, 252, 255);
+  min-height: 85vh;
+}
+
+.heading {
+  margin: 0 auto;
+  max-width: 500px;
+  color: #000;
+  font-size: 3.1rem;
+  line-height: 4.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in; 
+}
+
+.heading span {
+  background-clip: text;
+  background-image: linear-gradient(to right, #239ce2, #1369b9);
+  color: transparent;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+}
+
+.right img {
+  width: 400px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

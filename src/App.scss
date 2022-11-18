@@ -1,0 +1,4677 @@
+// Sora Font
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+// Acumin Font
+@font-face {
+  font-family: 'acumin_pro_condensed_blackRg';
+  src: url('../src/assets/fonts/acumin-pro-condensed-black-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/acumin-pro-condensed-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal !important;
+}
+
+/* Global css starts */
+:root {
+  --primary-color: #A93BFF;
+  --white-color: #ffffff;
+  --white-light-1: #F2F2F2;
+  --white-light-2: #EEEEEE;
+  --yellow-color: #EBF243;
+  --purple-light: #7601F4;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+.btn {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 18px;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+
+  &:focus {
+    background-color: var(--primary-color);
+    box-shadow: none;
+  }
+
+  
+}
+
+
+/* Global css ends */
+
+/* Hero styles starts */
+.hero-wrapper {
+  background: url('../src/assets/hero-background.svg') no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  min-height: 100vh;
+
+  // @media screen and (max-width: 767px) {
+  //   // display: flex;
+  //   flex-direction: column;
+  //   height: 100%;
+  // }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    nav.navbar.navbar-expand-lg.onmobile_nav.navbar-light {
+      display: block !important;
+  }
+
+  .rectangle_back{
+    height: auto;
+    position: relative;
+    left: 15px;
+    max-width: 50%;
+    top: -11px;
+  }
+
+  .onwebsite_nav {
+      display: none;
+    }
+
+  }
+
+  
+
+ 
+
+  .hero-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 760px;
+
+     
+
+
+    @media screen and (min-width: 1600px) {
+      min-width: 900px;
+    }
+
+    @media screen and (min-width: 1800px) {
+      min-width: 1000px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      max-width: 700px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 600px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 550px;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .banner-responsive-image {
+    display: none;
+    margin-top: 50px;
+    order: 2;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 991px) {
+      display: block;
+    }
+
+  }
+
+  .hero-banner {
+    margin-top: 115px;
+
+    @media screen and (min-width: 992px) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-top: 50px;
+      margin-top: 0;
+    }
+
+    .hero-row {
+      @media screen and (min-width: 992px) {
+        align-items: center;
+        min-height: calc(100vh - 90px);
+      }
+
+      // @media screen and (max-width: 991px) {
+      //   height: calc(100vh - 90px);
+      // }
+
+    }
+
+    .hero-title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 99.5%;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: var(--yellow-color);
+      font-family: 'acumin_pro_condensed_blackRg';
+
+      @media screen and (min-width: 1600px) {
+        font-size: 64px;
+        line-height: 99.5%;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+
+      
+      }
+
+      .text-br {
+        display: block;
+
+        @media screen and (max-width: 767px) {
+          display: inline;
+
+        }
+      }
+    }
+
+    .hero-para {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 152%;
+      color: var(--white-light-1);
+      margin-bottom: 0;
+
+      @media screen and (min-width: 1600px) {
+        font-size: 20px;
+        line-height: 152%;
+      }
+    }
+
+    .hero-btn {
+      margin-top: 30px;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+
+      @media screen and (min-width: 1600px) {
+        padding: 16px 36px;
+      }
+    }
+  }
+
+  .hero-action-box {
+    background-color: var(--purple-light);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+
+    .btn {
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      border-radius: 12px;
+    }
+
+    &.payment-box {
+      width: 360px;
+      height: 360px;
+
+      .bar-code-box {
+        background-color: var(--white-light-2);
+        padding: 25px;
+        border-radius: 12px;
+        height: 100%;
+
+        img {
+          max-height: 100%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Hero styles ends */
+
+// Fan Club css start
+.fan__container h2 {
+  font-family: 'acumin_pro_condensed_blackRg';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 99.5%;
+  color: #EBF243;
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+
+.fan__container p {
+  font-family: 'Sora';
+  letter-spacing: -0.02em;
+  color: #F2F2F2;
+}
+
+.head__box {
+  width: 417px;
+  height: 60px;
+  left: 839px;
+  top: 348px;
+  color: #F2F2F2;
+  background: #7601F4;
+  border: 1px solid #EBF243;
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 5px;
+  font-family: 'Sora';
+  letter-spacing: -0.02em;
+}
+
+.head__box img,
+.content__box img {
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+}
+
+.head__box a {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #F2F2F2;
+
+}
+
+.content__box {
+  width: 417px;
+  height: 180px;
+  left: 839px;
+  top: 420px;
+  color: #F2F2F2;
+  background: #7601F4;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.content__box li {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Sora';
+  letter-spacing: -0.02em;
+}
+
+.con__btn {
+  display: flex;
+  font-family: 'Sora';
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+  gap: 10px;
+  width: 417px;
+  height: 48px;
+  color: #F2F2F2;
+  ;
+  border: 2px solid #A93BFF;
+  border-radius: 18px;
+  text-decoration: none;
+}
+
+.con__btn:hover {
+  background: #A93BFF;
+}
+
+// Fan Club css ends
+
+// About css
+
+.bg-banner {
+  background-image: url(../public/img/dw_1-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blue-gradient {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1D2D7A 0%, #1B2339 100%);
+}
+
+body {
+  margin: 0px;
+}
+
+.blue-gradient-1 {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1B2339 22%, #0F0F0F 100%);
+}
+
+.text-gradient {
+  background-color: transparent;
+  background-image: linear-gradient(260deg, #217AFD 0%, #59FEC3 100%);
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-gradient-2 {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #0A0A0A 100%, #1B2339 18%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.blue-gradient-2-overlay {
+  background-color: transparent;
+  background-image: radial-gradient(#ffc584 0%, #1b2339 48%);
+  opacity: .2;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.how-to-wow {
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  background-color: #fff;
+  border-width: 1px 1px 1px 1px;
+  border-color: #61ce70;
+  border-radius: 20px 20px 20px 20px;
+  // box-shadow: 0 2px 4px 1px rgb(255 255 255 / 50%);
+}
+
+.blue-gradient-3 {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #0F0F0F 0%, #1B2339 100%);
+}
+
+.underline-hover {
+  color: #fff;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.underline-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #ffc584;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline-hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* screen - fanfury-opening-screen-1 */
+
+.fanfury-opening-screen-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 769px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-opening-screen-1 .fanfury-brand-assets {
+  height: 1px;
+  margin-left: -48.19px;
+  margin-top: -28px;
+  object-fit: cover;
+  width: 1px;
+}
+
+.fanfury-opening-screen-1 .overlap-group1 {
+  height: 2863px;
+  margin-left: -654.0px;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.fanfury-opening-screen-1 .rectangle {
+  background-color: var(--white);
+  height: 750px;
+  left: 655px;
+  position: absolute;
+  top: 26px;
+  transform: rotate(-180deg);
+  width: 1525px;
+}
+
+.fanfury-opening-screen-1 .season-starts-sept2022 {
+  left: 1635px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 260px;
+}
+
+.fanfury-opening-screen-1 .rectangle-131 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 1, 244) 0%, rgb(16, 0, 92) 100%);
+  height: 2856px;
+  left: 655px;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-180deg);
+  width: 100%;
+}
+
+.fanfury-opening-screen-1 .ellipse-9 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(169, 59, 255) 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 443.5px;
+  height: 887px;
+  left: 642px;
+  opacity: 0.6;
+  position: absolute;
+  top: 178px;
+  width: 887px;
+}
+
+.fanfury-opening-screen-1 .fanfury-brand-assets-1 {
+  height: 2004px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 282px;
+  width: 2004px;
+}
+
+.fanfury-opening-screen-1 .fanfury-brand-assets-2 {
+  height: 964px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1442px;
+}
+
+.fanfury-opening-screen-1 .fanfury-brand-assets-3 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+
+.fanfury-opening-screen-1 .frame-161 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 1493px;
+  min-height: 279px;
+  position: absolute;
+  top: 261px;
+  width: 452px;
+}
+
+.fanfury-opening-screen-1 .frame-160 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 195px;
+  width: 452px;
+}
+
+.fanfury-opening-screen-1 .find-your-fury {
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  min-height: 128px;
+}
+
+.fanfury-opening-screen-1 .claim-own-and-manag {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 7px;
+  min-height: 60px;
+
+}
+
+.fanfury-opening-screen-1 .frame-135 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  margin-top: 36px;
+  min-width: 268px;
+  padding: 15px 36px;
+}
+
+.fanfury-opening-screen-1 .connect-wallet-to-begin {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 196px;
+  text-align: center;
+}
+
+.fanfury-opening-screen-1 .group-278 {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  left: 729px;
+  min-width: 1261px;
+  position: absolute;
+  top: 20px;
+}
+
+.fanfury-opening-screen-1 .frame {
+  height: 69px;
+  width: 219px;
+}
+
+.fanfury-opening-screen-1 .nav {
+  align-items: flex-start;
+  display: flex;
+  height: 19px;
+  margin-left: 566px;
+  margin-top: 14.0px;
+  min-width: 232px;
+}
+
+.fanfury-opening-screen-1 .packages {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-top: -1px;
+  min-height: 19px;
+  min-width: 82px;
+  white-space: nowrap;
+}
+
+.fanfury-opening-screen-1 .about-us {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 19px;
+  white-space: nowrap;
+}
+
+.fanfury-opening-screen-1 .search-bar {
+  background-image: url(../public/img/search-1@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  margin-left: 82px;
+  margin-top: 17.0px;
+  width: 24px;
+}
+
+.fanfury-opening-screen-1 .frame-134 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  margin-left: 48px;
+  margin-top: 9.0px;
+  min-width: 120px;
+  padding: 15px 24px;
+}
+
+.fanfury-opening-screen-1 .play-now {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.fanfury-opening-screen-1 .image-container {
+  height: 584px;
+  left: 643px;
+  position: absolute;
+  top: 199px;
+  width: 843px;
+}
+
+.fanfury-opening-screen-1 .image-3 {
+  height: 492px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 84px;
+  width: 319px;
+}
+
+.fanfury-opening-screen-1 .image-5 {
+  height: 506px;
+  left: 414px;
+  object-fit: cover;
+  position: absolute;
+  top: 78px;
+  width: 429px;
+}
+
+.fanfury-opening-screen-1 .image-2 {
+  height: 577px;
+  left: 214px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 393px;
+}
+
+/* screen - fanfury-screen-2 */
+
+.fanfury-screen-2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 769px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-screen-2 .fanfury-brand-assets {
+  height: 1px;
+  margin-left: -48.19px;
+  margin-top: -28px;
+  object-fit: cover;
+  width: 1px;
+}
+
+.fanfury-screen-2 .overlap-group1 {
+  height: 2863px;
+  margin-left: -654.0px;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.fanfury-screen-2 .rectangle {
+  background-color: var(--white);
+  height: 750px;
+  left: 655px;
+  position: absolute;
+  top: 26px;
+  transform: rotate(-180deg);
+  width: 1525px;
+}
+
+.fanfury-screen-2 .season-starts-sept2022 {
+  left: 1635px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 260px;
+}
+
+.fanfury-screen-2 .rectangle-131 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 1, 244) 0%, rgb(16, 0, 92) 100%);
+  height: 2856px;
+  left: 655px;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-180deg);
+  width: 100%;
+}
+
+.fanfury-screen-2 .ellipse-9 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(169, 59, 255) 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 443.5px;
+  height: 887px;
+  left: 642px;
+  opacity: 0.6;
+  position: absolute;
+  top: 178px;
+  width: 887px;
+}
+
+.fanfury-screen-2 .fanfury-brand-assets-1 {
+  height: 2004px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 282px;
+  width: 2004px;
+}
+
+.fanfury-screen-2 .fanfury-brand-assets-2 {
+  height: 964px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1442px;
+}
+
+.fanfury-screen-2 .fanfury-brand-assets-3 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+
+.fanfury-screen-2 .frame-161 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 1493px;
+  min-height: 131px;
+  position: absolute;
+  top: 261px;
+  width: 452px;
+}
+
+.fanfury-screen-2 .connect-wallet {
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  min-height: 64px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-2 .claim-own-and-manag {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 7px;
+  min-height: 60px;
+
+}
+
+.fanfury-screen-2 .group-278 {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  left: 729px;
+  min-width: 1261px;
+  position: absolute;
+  top: 20px;
+}
+
+.fanfury-screen-2 .frame {
+  height: 69px;
+  width: 219px;
+}
+
+.fanfury-screen-2 .nav {
+  align-items: flex-start;
+  display: flex;
+  height: 19px;
+  margin-left: 566px;
+  margin-top: 14.0px;
+  min-width: 232px;
+}
+
+.fanfury-screen-2 .packages {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-top: -1px;
+  min-height: 19px;
+  min-width: 82px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-2 .about-us {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 19px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-2 .search-bar {
+  background-image: url(../public/img/search-1@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  margin-left: 82px;
+  margin-top: 17.0px;
+  width: 24px;
+}
+
+.fanfury-screen-2 .frame-134 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  margin-left: 48px;
+  margin-top: 9.0px;
+  min-width: 120px;
+  padding: 15px 24px;
+}
+
+.fanfury-screen-2 .play-now {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.fanfury-screen-2 .group-279 {
+  align-items: flex-start;
+  background-color: var(--electric-violet-2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  left: 1493px;
+  min-height: 240px;
+  padding: 33px 26.3px;
+  position: absolute;
+  top: 451px;
+  width: 417px;
+}
+
+.fanfury-screen-2 .back-arrow {
+  background-color: #5500b1;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 77px;
+  margin-top: 1px;
+  width: 364px;
+}
+
+.fanfury-screen-2 .back-arrow-1 {
+  background-color: #5500b1;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 77px;
+  margin-top: 19px;
+  width: 364px;
+}
+
+.fanfury-screen-2 .image-container {
+  height: 584px;
+  left: 654px;
+  position: absolute;
+  top: 199px;
+  width: 843px;
+}
+
+.fanfury-screen-2 .image-3 {
+  height: 492px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 84px;
+  width: 319px;
+}
+
+.fanfury-screen-2 .image-5 {
+  height: 506px;
+  left: 414px;
+  object-fit: cover;
+  position: absolute;
+  top: 78px;
+  width: 429px;
+}
+
+.fanfury-screen-2 .image-2 {
+  height: 577px;
+  left: 214px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 393px;
+}
+
+/* screen - fanfury-screen-3 */
+
+.fanfury-screen-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 769px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-screen-3 .fanfury-brand-assets {
+  height: 1px;
+  margin-left: -48.19px;
+  margin-top: -28px;
+  object-fit: cover;
+  width: 1px;
+}
+
+.fanfury-screen-3 .overlap-group {
+  height: 2863px;
+  margin-left: -654.0px;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.fanfury-screen-3 .rectangle {
+  background-color: var(--white);
+  height: 750px;
+  left: 655px;
+  position: absolute;
+  top: 26px;
+  transform: rotate(-180deg);
+  width: 1525px;
+}
+
+.fanfury-screen-3 .season-starts-sept2022 {
+  left: 1635px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 260px;
+}
+
+.fanfury-screen-3 .rectangle-131 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 1, 244) 0%, rgb(16, 0, 92) 100%);
+  height: 2856px;
+  left: 655px;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-180deg);
+  width: 100%;
+}
+
+.fanfury-screen-3 .ellipse-9 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(169, 59, 255) 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 443.5px;
+  height: 887px;
+  left: 642px;
+  opacity: 0.6;
+  position: absolute;
+  top: 178px;
+  width: 887px;
+}
+
+.fanfury-screen-3 .fanfury-brand-assets-1 {
+  height: 2004px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 282px;
+  width: 2004px;
+}
+
+.fanfury-screen-3 .fanfury-brand-assets-2 {
+  height: 964px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1442px;
+}
+
+.fanfury-screen-3 .fanfury-brand-assets-3 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+
+.fanfury-screen-3 .group-278 {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  left: 729px;
+  min-width: 1261px;
+  position: absolute;
+  top: 20px;
+}
+
+.fanfury-screen-3 .frame {
+  height: 69px;
+  width: 219px;
+}
+
+.fanfury-screen-3 .nav {
+  align-items: flex-start;
+  display: flex;
+  height: 19px;
+  margin-left: 566px;
+  margin-top: 14.0px;
+  min-width: 232px;
+}
+
+.fanfury-screen-3 .packages {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-top: -1px;
+  min-height: 19px;
+  min-width: 82px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-3 .about-us {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 19px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-3 .search-bar {
+  background-image: url(../public/img/search-1@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  margin-left: 82px;
+  margin-top: 17.0px;
+  width: 24px;
+}
+
+.fanfury-screen-3 .frame-134 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  margin-left: 48px;
+  margin-top: 9.0px;
+  min-width: 120px;
+  padding: 15px 24px;
+}
+
+.fanfury-screen-3 .play-now {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.fanfury-screen-3 .group-279 {
+  background-color: var(--electric-violet-2);
+  border-radius: 12px;
+  height: 408px;
+  left: 1493px;
+  position: absolute;
+  top: 223px;
+  width: 417px;
+}
+
+.fanfury-screen-3 .group-281 {
+  background-color: var(--gallery);
+  border-radius: 12px;
+  height: 357px;
+  left: 1519px;
+  position: absolute;
+  top: 248px;
+  width: 365px;
+}
+
+.fanfury-screen-3 .payment-integration-panel {
+  left: 1623px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 377px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-3 .image-3 {
+  height: 492px;
+  left: 654px;
+  object-fit: cover;
+  position: absolute;
+  top: 283px;
+  width: 319px;
+}
+
+.fanfury-screen-3 .image-5 {
+  height: 506px;
+  left: 1068px;
+  object-fit: cover;
+  position: absolute;
+  top: 277px;
+  width: 429px;
+}
+
+.fanfury-screen-3 .image-2 {
+  height: 577px;
+  left: 868px;
+  object-fit: cover;
+  position: absolute;
+  top: 199px;
+  width: 393px;
+}
+
+/* screen - fanfury-screen-4 */
+
+.fanfury-screen-4 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2095px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets {
+  height: 1px;
+  margin-left: -178.19px;
+  margin-top: -128px;
+  object-fit: cover;
+  width: 1px;
+}
+
+.fanfury-screen-4 .overlap-group9 {
+  height: 2863px;
+  margin-left: -654.0px;
+  margin-top: 120px;
+  position: relative;
+  width: 100%;
+}
+
+.fanfury-screen-4 .rectangle {
+  background-color: var(--white);
+  height: 750px;
+  left: 655px;
+  position: absolute;
+  top: 26px;
+  transform: rotate(-180deg);
+  width: 1525px;
+}
+
+.fanfury-screen-4 .rectangle-131 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 1, 244) 0%, rgb(16, 0, 92) 100%);
+  height: 2856px;
+  left: 655px;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-180deg);
+  width: 100%;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets-1 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 1623px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .frame-135 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  left: 892px;
+  min-width: 243px;
+  padding: 15px 61.5px;
+  position: absolute;
+  top: 1732px;
+}
+
+.fanfury-screen-4 .select-package {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.fanfury-screen-4 .frame-136 {
+  align-items: flex-start;
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  left: 1172px;
+  min-width: 243px;
+  padding: 14px 61.5px;
+  position: absolute;
+  top: 1732px;
+}
+
+.fanfury-screen-4 .frame-169 {
+  align-items: flex-start;
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  left: 1457px;
+  min-width: 243px;
+  padding: 14px 61.5px;
+  position: absolute;
+  top: 1732px;
+}
+
+.fanfury-screen-4 .frame-170 {
+  align-items: flex-start;
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  left: 1724px;
+  min-width: 243px;
+  padding: 14px 61.5px;
+  position: absolute;
+  top: 1732px;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets-2 {
+  height: 2004px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 282px;
+  width: 2004px;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets-3 {
+  height: 964px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1442px;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets-4 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .fanfury-brand-assets-5 {
+  height: 1px;
+  left: 655px;
+  object-fit: cover;
+  position: absolute;
+  top: 812px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .frame-161 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 972px;
+  min-height: 131px;
+  position: absolute;
+  top: 151px;
+  width: 742px;
+}
+
+.fanfury-screen-4 .how-strong-is-your-fury {
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  min-height: 64px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .with-2x-tokens-on-se {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 7px;
+  min-height: 60px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .rectangle-154 {
+  height: 1px;
+  left: 972px;
+  position: absolute;
+  top: 307px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .rectangle-161 {
+  background-color: var(--electric-violet-2);
+
+  border-image: linear-gradient(to bottom, rgb(169, 59, 255), rgba(169, 59, 255, 0)) 1;
+  border-radius: 24px;
+  height: 648px;
+  left: 1386px;
+  position: absolute;
+  top: 307px;
+  transform: rotate(-180deg);
+  width: 243px;
+}
+
+.fanfury-screen-4 .rectangle-163 {
+  background-color: var(--electric-violet-2);
+
+  border-image: linear-gradient(to bottom, rgb(169, 59, 255), rgba(169, 59, 255, 0)) 1;
+  border-radius: 24px;
+  height: 648px;
+  left: 1660px;
+  position: absolute;
+  top: 307px;
+  transform: rotate(-180deg);
+  width: 243px;
+}
+
+.fanfury-screen-4 .frame-168 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 748px;
+  min-height: 554px;
+  position: absolute;
+  top: 1132px;
+  width: 210px;
+}
+
+.fanfury-screen-4 .surname {
+  letter-spacing: 0.32px;
+  line-height: 20px;
+  margin-top: -1px;
+  min-height: 50px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .frame-168-item {
+  letter-spacing: 0.32px;
+  line-height: 20px;
+  margin-top: 38px;
+  min-height: 50px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .token-value-due-to-2x-deal {
+  letter-spacing: 0.32px;
+  line-height: 20px;
+  margin-top: 38px;
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .early-bird {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-top: 38px;
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .basic {
+  left: 1048px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  top: 1047px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .pro {
+  left: 1331px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  top: 1047px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .elite {
+  left: 1588px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  top: 1047px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .legendary {
+  left: 1808px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  top: 1047px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .line-11 {
+  height: 554px;
+  left: 957px;
+  position: absolute;
+  top: 1132px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .line-12 {
+  height: 554px;
+  left: 1225px;
+  position: absolute;
+  top: 1132px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .line-13 {
+  height: 554px;
+  left: 1493px;
+  position: absolute;
+  top: 1132px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .line-14 {
+  height: 554px;
+  left: 1761px;
+  position: absolute;
+  top: 1132px;
+  width: 1px;
+}
+
+.fanfury-screen-4 .line-15 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1204px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .line-16 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1288px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .line-17 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1372px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .line-18 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1456px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .line-19 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1540px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .line-20 {
+  height: 1px;
+  left: 729px;
+  position: absolute;
+  top: 1624px;
+  width: 90%;
+}
+
+.fanfury-screen-4 .price {
+  left: 1066px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1147px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .na {
+  left: 1072px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1230px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .price-1 {
+  left: 1332px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1147px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .percent {
+  left: 1345px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1230px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .price-2 {
+  left: 1595px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1147px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .percent-1 {
+  left: 1607px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1230px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .number {
+  left: 1599px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1313px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .price-3 {
+  left: 1862px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1147px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .percent-2 {
+  left: 1877px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1230px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .number-1 {
+  left: 1867px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 1313px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .icon-pack-variants {
+  height: 24px;
+  left: 1082px;
+  position: absolute;
+  top: 1648px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-1 {
+  height: 24px;
+  left: 1082px;
+  position: absolute;
+  top: 1481px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-2 {
+  height: 24px;
+  left: 1350px;
+  position: absolute;
+  top: 1648px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-3 {
+  height: 24px;
+  left: 1350px;
+  position: absolute;
+  top: 1481px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-4 {
+  height: 24px;
+  left: 1618px;
+  position: absolute;
+  top: 1648px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-5 {
+  height: 24px;
+  left: 1618px;
+  position: absolute;
+  top: 1481px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-6 {
+  height: 24px;
+  left: 1886px;
+  position: absolute;
+  top: 1648px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-7 {
+  height: 24px;
+  left: 1886px;
+  position: absolute;
+  top: 1481px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-8 {
+  height: 24px;
+  left: 1082px;
+  position: absolute;
+  top: 1399px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-9 {
+  height: 24px;
+  left: 1082px;
+  position: absolute;
+  top: 1315px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-10 {
+  height: 24px;
+  left: 1082px;
+  position: absolute;
+  top: 1570px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-11 {
+  height: 24px;
+  left: 1350px;
+  position: absolute;
+  top: 1399px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-12 {
+  height: 24px;
+  left: 1350px;
+  position: absolute;
+  top: 1315px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-13 {
+  height: 24px;
+  left: 1350px;
+  position: absolute;
+  top: 1570px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-14 {
+  height: 24px;
+  left: 1618px;
+  position: absolute;
+  top: 1399px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-15 {
+  height: 24px;
+  left: 1618px;
+  position: absolute;
+  top: 1570px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-16 {
+  height: 24px;
+  left: 1886px;
+  position: absolute;
+  top: 1399px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .icon-pack-variants-17 {
+  height: 24px;
+  left: 1886px;
+  position: absolute;
+  top: 1570px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .group-278 {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  left: 729px;
+  min-width: 1261px;
+  position: absolute;
+  top: 20px;
+}
+
+.fanfury-screen-4 .frame {
+  height: 69px;
+  width: 219px;
+}
+
+.fanfury-screen-4 .nav {
+  align-items: flex-start;
+  display: flex;
+  height: 19px;
+  margin-left: 566px;
+  margin-top: 14.0px;
+  min-width: 232px;
+}
+
+.fanfury-screen-4 .packages {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-top: -1px;
+  min-height: 19px;
+  min-width: 82px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .about-us {
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  margin-left: 42px;
+  margin-top: -1px;
+  min-height: 19px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .search-bar {
+  background-image: url(../public/img/search-1@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+
+  margin-top: 17.0px;
+  width: 24px;
+}
+
+.fanfury-screen-4 .frame-134 {
+  align-items: flex-start;
+  background-color: var(--electric-violet);
+  border-radius: 18px;
+  display: flex;
+  height: 48px;
+  margin-left: 48px;
+  margin-top: 9.0px;
+  min-width: 120px;
+  padding: 15px 24px;
+}
+
+.fanfury-screen-4 .play-now {
+  letter-spacing: 1.30px;
+  min-height: 16px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.fanfury-screen-4 .group-282 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 888px;
+  min-height: 286px;
+  position: absolute;
+  top: 615px;
+  width: 211px;
+}
+
+.fanfury-screen-4 .overlap-group {
+  height: 60px;
+  margin-right: 7.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 186px;
+}
+
+.fanfury-screen-4 .basic-1 {
+  left: 47px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .line-21 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 54px;
+  width: 186px;
+}
+
+.fanfury-screen-4 .price-4 {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-right: 8.0px;
+  min-height: 36px;
+  min-width: 51px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .overlap-group-1 {
+  align-items: flex-start;
+  background-image: url(./assets/contibutors.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 42px;
+  margin-right: 8.0px;
+  margin-top: 2px;
+  min-width: 203px;
+  padding: 6px 53.5px;
+}
+
+.fanfury-screen-4 .get-an-early-bird-bonus {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 28px;
+  min-width: 96px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .tooltip-50-worth {
+  letter-spacing: 0.26px;
+  line-height: 20px;
+  margin-right: 8.0px;
+  margin-top: 20px;
+  min-height: 126px;
+  text-align: center;
+
+  width: 187px;
+}
+
+.fanfury-screen-4 .rectangle-159 {
+  background-color: var(--electric-violet-2);
+
+  border-image: linear-gradient(to bottom, rgb(169, 59, 255), rgba(169, 59, 255, 0)) 1;
+  border-radius: 24px;
+  height: 648px;
+  left: 1110px;
+  position: absolute;
+  top: 307px;
+  transform: rotate(-180deg);
+  width: 243px;
+}
+
+.fanfury-screen-4 .group-283 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1135px;
+  min-height: 286px;
+  padding: 0 0.0px;
+  position: absolute;
+  top: 615px;
+  width: 211px;
+}
+
+.fanfury-screen-4 .overlap-group4 {
+  height: 96px;
+  margin-right: 7.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 186px;
+}
+
+.fanfury-screen-4 .overlap-group2 {
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 186px;
+}
+
+.fanfury-screen-4 .pro-1 {
+  left: 62px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 61px;
+}
+
+.fanfury-screen-4 .price-5 {
+  left: 46px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  white-space: nowrap;
+  width: 93px;
+}
+
+.fanfury-screen-4 .overlap-group3 {
+  align-items: flex-start;
+  background-image: url(../public/img/vector-44-3@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 42px;
+  justify-content: flex-end;
+  margin-right: 8.0px;
+  margin-top: 2px;
+  min-width: 203px;
+  padding: 6.0px 38.5px;
+}
+
+.fanfury-screen-4 .x5-discount-on-this-package {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 28px;
+  text-align: center;
+  white-space: nowrap;
+  width: 125px;
+}
+
+.fanfury-screen-4 .group-284 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1404px;
+  min-height: 286px;
+  position: absolute;
+  top: 615px;
+  width: 211px;
+}
+
+.fanfury-screen-4 .elite-1 {
+  left: 52px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .price-6 {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-right: 9.0px;
+  min-height: 36px;
+  min-width: 66px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .overlap-group5 {
+  align-items: flex-end;
+  background-image: url(../public/img/vector-44-3@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 42px;
+  margin-right: 8.0px;
+  margin-top: 2px;
+  min-width: 203px;
+  padding: 4px 35.5px;
+}
+
+.fanfury-screen-4 .x10-discount-on-this-package {
+  letter-spacing: 0;
+  min-height: 32px;
+  min-width: 132px;
+  text-align: center;
+}
+
+.fanfury-screen-4 .group-285 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1677px;
+  min-height: 286px;
+  position: absolute;
+  top: 615px;
+  width: 211px;
+}
+
+.fanfury-screen-4 .legendary-1 {
+  left: 5px;
+  letter-spacing: 0;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .price-7 {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-right: 9.0px;
+  min-height: 36px;
+  min-width: 70px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .overlap-group7 {
+  align-items: flex-start;
+  background-image: url(../public/img/vector-44-3@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 42px;
+  margin-right: 8.0px;
+  margin-top: 2px;
+  min-width: 203px;
+  padding: 6px 37.5px;
+}
+
+.fanfury-screen-4 .x12-discount-on-this-package {
+  letter-spacing: 0;
+  line-height: 20px;
+  min-height: 28px;
+  min-width: 128px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .image-12 {
+  height: 184px;
+  left: 1407px;
+  object-fit: cover;
+  position: absolute;
+  top: 379px;
+  width: 202px;
+}
+
+.fanfury-screen-4 .image-13 {
+  height: 224px;
+  left: 1697px;
+  object-fit: cover;
+  position: absolute;
+  top: 359px;
+  width: 166px;
+}
+
+.fanfury-screen-4 .frame-174 {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  left: 729px;
+  min-width: 1292px;
+  position: absolute;
+  top: 2008px;
+}
+
+.fanfury-screen-4 .frame-148 {
+  align-items: flex-start;
+  display: flex;
+  height: 20px;
+  min-width: 492px;
+}
+
+.fanfury-screen-4 .about {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-top: -1px;
+  min-height: 20px;
+  min-width: 48px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .contact-us {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 20px;
+  min-width: 86px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .t-c {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 20px;
+  min-width: 38px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .privacy-policy {
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-left: 72px;
+  margin-top: -1px;
+  min-height: 20px;
+  white-space: nowrap;
+}
+
+.fanfury-screen-4 .frame-173 {
+  align-items: center;
+  display: flex;
+  margin-left: 672px;
+  min-width: 128px;
+}
+
+.fanfury-screen-4 .icon-twitter {
+  height: 18px;
+  width: 18px;
+}
+
+.fanfury-screen-4 .telegram-negative {
+  background-image: url(../public/img/subtract-2@2x.png);
+  background-size: 100% 100%;
+  height: 18px;
+  margin-left: 18px;
+  width: 18px;
+}
+
+.fanfury-screen-4 .frame-1 {
+  height: 16px;
+  margin-left: 18px;
+  width: 20px;
+}
+
+.fanfury-screen-4 .icon-instagram {
+  height: 18px;
+  margin-left: 18px;
+  width: 18px;
+}
+
+.fanfury-screen-4 .frame-174-1 {
+  align-items: center;
+  display: flex;
+  margin-left: 672px;
+  min-width: 126px;
+}
+
+.fanfury-screen-4 .frame-2 {
+  height: 14px;
+  margin-left: 18px;
+  width: 18px;
+}
+
+.fanfury-screen-4 .image-14 {
+  height: 148px;
+  left: 902px;
+  object-fit: cover;
+  position: absolute;
+  top: 397px;
+  width: 192px;
+}
+
+.fanfury-screen-4 .image-15 {
+  height: 210px;
+  left: 1158px;
+  object-fit: cover;
+  position: absolute;
+  top: 366px;
+  width: 165px;
+}
+
+/* screen - fanfury-web-experience-visual-aesthetic-1 */
+
+.fanfury-web-experience-visual-aesthetic-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 78rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .grou-container {
+  height: 3279px;
+  margin-top: -128px;
+  position: relative;
+  width: 1619px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group12 {
+  height: 3279px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1619px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-66 {
+  background-color: var(--white);
+  height: 708px;
+  left: 0;
+  position: absolute;
+  top: 236px;
+  width: 100%;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-130 {
+  background-color: var(--arapawa);
+  height: 2856px;
+  left: 0;
+  position: absolute;
+  top: 128px;
+  width: 79px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-131 {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(118, 1, 244) 0%, rgb(16, 0, 92) 100%);
+  height: 2856px;
+  left: 80px;
+  position: absolute;
+  top: 128px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets {
+  height: 1250px;
+  left: 369px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1250px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-1 {
+  height: 769px;
+  left: 75px;
+  object-fit: cover;
+  position: absolute;
+  top: 1748px;
+  width: 1365px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-2 {
+  height: 1px;
+  left: 91px;
+  object-fit: cover;
+  position: absolute;
+  top: 403px;
+  width: 1px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-3 {
+  height: 909px;
+  left: 80px;
+  object-fit: cover;
+  position: absolute;
+  top: 2075px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-4 {
+  height: 767px;
+  left: 80px;
+  object-fit: cover;
+  position: absolute;
+  top: 212px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-5 {
+  height: 200px;
+  left: 101px;
+  object-fit: cover;
+  position: absolute;
+  top: 610px;
+  width: 1009px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-6 {
+  height: 769px;
+  left: 75px;
+  object-fit: cover;
+  position: absolute;
+  top: 980px;
+  width: 1365px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .line-1 {
+  height: 1px;
+  left: 80px;
+  position: absolute;
+  top: 212px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-132 {
+  height: 456px;
+  left: 164px;
+  object-fit: cover;
+  position: absolute;
+  top: 284px;
+  width: 67%;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .popular-games {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 817px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .games-on-our-platform {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 1682px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-150 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1136px;
+  min-width: 120px;
+  position: absolute;
+  top: 812px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group {
+  border-radius: 12px;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .caret {
+  height: 32px;
+  left: 8px;
+  position: absolute;
+  top: 8px;
+  width: 32px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-13 {
+  border-radius: 12px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group1 {
+  border-radius: 12px;
+  height: 48px;
+  margin-left: 24px;
+  position: relative;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group2 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 200px;  
+  min-height: 396px;
+  position: absolute;
+  top: 896px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-1 {
+  background-image: url(./assets/contibutorss.png.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 192px;
+  position: relative;
+  border-top-left-radius: 31px;
+  border-top-right-radius: 31px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-138 {
+  background: linear-gradient(180deg, rgb(16, 0, 92) 0%, rgba(16, 0, 92, 0) 100%);
+  border-radius: 24px 24px 0px 0px;
+  height: 192px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-football-2022 {
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 84px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .season-starts-sept2022 {
+  left: 20px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 155px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+
+  margin-top: 23px;
+  min-width: 216px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-2 {
+  height: 47px;
+  position: relative;
+  width: 60px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .players {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .text-1 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-container {
+  height: 47px;
+  margin-left: 48px;
+  position: relative;
+  width: 108px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-now {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .draft-opens {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .popular-ways-to-play {
+  align-self: flex-start;
+  letter-spacing: 0;
+  margin-left: 21px;
+  margin-top: 13px;
+  min-height: 16px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-151 {
+  align-items: flex-start;
+  display: flex;
+  height: 16px;
+  margin-top: 9px;
+  min-width: 231px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .redraft {
+  letter-spacing: 1.30px;
+  margin-top: -1px;
+  min-height: 16px;
+  min-width: 59px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .auction {
+  letter-spacing: 1.30px;
+  margin-left: 24px;
+  margin-top: -1px;
+  min-height: 16px;
+  min-width: 62px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .dynasty {
+  letter-spacing: 1.30px;
+  margin-left: 24px;
+  margin-top: -1px;
+  min-height: 16px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-4 {
+  align-items: flex-start;
+  background-color: var(--electric-violet-2);
+  border-radius: 0px 0px 24px 24px;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  min-width: 233px;
+  padding: 14px 0px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-container {
+  align-self: center;
+  height: 23px;
+  margin-bottom: 1.0px;
+  position: relative;
+  width: 87px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-2 {
+  height: 23px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-3 {
+  height: 23px;
+  left: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-4 {
+  height: 23px;
+  left: 32px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-5 {
+  height: 23px;
+  left: 48px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-6 {
+  height: 23px;
+  left: 64px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .x1000-players {
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 25px;
+  min-height: 29px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group6 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 905px;
+  min-height: 396px;
+  position: absolute;
+  top: 896px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .players-1 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .text-2 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-now-1 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .draft-opens-1 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-3 {
+  align-items: flex-start;
+  background-color: var(--electric-violet-2);
+  border-radius: 0px 0px 24px 24px;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  min-width: 223px;
+  padding: 15px 0px;
+}
+
+// .fanfury-web-experience-visual-aesthetic-1 .overlap-group7 {
+//   align-items: center;
+//   background-color: var(--gallery);
+//   border-radius: 24px;
+//   display: flex;
+//   flex-direction: column;
+//   left: 1015px;
+//   min-height: 396px;
+//   position: absolute;
+//   top: 896px;
+//   width: 233px;
+// }
+
+.fanfury-web-experience-visual-aesthetic-1 .players-2 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .text-3 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-now-2 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .draft-opens-2 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group8 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 537px;
+  min-height: 422px;
+  padding: 0.0px 0;
+  position: absolute;
+  top: 883px;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group2-1 {
+  background-image: url(../public/img/rectangle-136-9@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 205px;
+  position: relative;
+  border-top-left-radius: 31px;
+  border-top-right-radius: 31px;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-138-1 {
+  background: linear-gradient(180deg, rgb(16, 0, 92) 0%, rgba(16, 0, 92, 0) 100%);
+  border-radius: 24px 24px 0px 0px;
+  height: 205px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-football-2022-1 {
+  left: 22px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 84px;
+  white-space: nowrap;
+  width: 227px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .season-starts-sept2022-1 {
+  left: 21px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 165px;
+  width: 228px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-container-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 15.99px;
+  margin-top: 25px;
+  min-width: 230px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group3 {
+  height: 50px;
+  position: relative;
+  width: 64px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .players-3 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .text-4 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+  width: 51px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-container-1 {
+  height: 50px;
+  margin-left: 51px;
+  position: relative;
+  width: 115px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .open-now-3 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+  width: 115px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .draft-opens-3 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 102px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .popular-ways-to-play-1 {
+  align-self: flex-start;
+  letter-spacing: 0;
+  margin-left: 22.38px;
+  margin-top: 14px;
+  min-height: 17px;
+  width: 177px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-151-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 17px;
+  margin-left: 0;
+  margin-top: 10px;
+  min-width: 246px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group-5 {
+  align-items: flex-start;
+  background-color: var(--electric-violet-2);
+  border-radius: 0px 0px 24px 24px;
+  display: flex;
+  height: 64px;
+  margin-top: 21px;
+  min-width: 261px;
+  padding: 15.9px 3px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-container-1 {
+  align-self: center;
+  height: 25px;
+  margin-bottom: 1.07px;
+  position: relative;
+  width: 93px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-2-1 {
+  height: 25px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-3-1 {
+  height: 25px;
+  left: 17px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-4-1 {
+  height: 25px;
+  left: 34px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-5-1 {
+  height: 25px;
+  left: 51px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-6-1 {
+  height: 25px;
+  left: 68px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .x1000-players-1 {
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 26px;
+  min-height: 29px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-139 {
+  height: 240px;
+  left: 165px;
+  object-fit: cover;
+  position: absolute;
+  top: 1352px;
+  width: 67%;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-7 {
+  height: 120px;
+  left: 184px;
+  object-fit: cover;
+  position: absolute;
+  top: 1764px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-football {
+  left: 165px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1891px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-7-1 {
+  height: 120px;
+  left: 380px;
+  object-fit: cover;
+  position: absolute;
+  top: 1760px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-basketball {
+  left: 347px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1891px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-7-2 {
+  height: 120px;
+  left: 612px;
+  object-fit: cover;
+  position: absolute;
+  top: 1760px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .league-of-legends {
+  left: 587px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1891px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-7-3 {
+  height: 120px;
+  left: 826px;
+  object-fit: cover;
+  position: absolute;
+  top: 1760px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .bracket-mania {
+  left: 847px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1891px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-7-4 {
+  height: 120px;
+  left: 1063px;
+  object-fit: cover;
+  position: absolute;
+  top: 1760px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .dfs {
+  left: 1103px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1891px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .appstore {
+  height: 48px;
+  left: 911px;
+  position: absolute;
+  top: 146px;
+  width: 166px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .googleplay {
+  height: 38px;
+  left: 1099px;
+  position: absolute;
+  top: 146px;
+  width: 133px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-159 {
+  height: 660px;
+  left: 10px;
+  position: absolute;
+  top: 145px;
+  width: 36px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .the-most-engaging-fantasy-app {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 2023px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .see-why-millions-of {
+  color: var(--silver);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  left: 165px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 2071px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-151-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1140px;
+  min-width: 120px;
+  position: absolute;
+  top: 2060px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group9 {
+  height: 216px;
+  left: 165px;
+  position: absolute;
+  top: 2132px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-140 {
+  background-color: var(--gallery);
+
+  border-image: linear-gradient(to bottom, rgb(169, 59, 255), rgba(169, 59, 255, 0)) 1;
+  border-radius: 36px;
+  height: 192px;
+  left: 22px;
+  position: absolute;
+  top: 24px;
+  transform: rotate(-180deg);
+  width: 414px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .ellipse-8 {
+  height: 72px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 72px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .lorem-ipsum-dolor-si {
+  left: 88px;
+  letter-spacing: 0.26px;
+  line-height: 40px;
+  position: absolute;
+  top: 51px;
+  white-space: nowrap;
+  width: 309px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .name {
+  left: 88px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 159px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group10 {
+  height: 216px;
+  left: 621px;
+  position: absolute;
+  top: 2132px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .overlap-group11 {
+  height: 216px;
+  left: 1077px;
+  position: absolute;
+  top: 2132px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .popular-channels {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 2491px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .x2021-2022-mellow-des {
+  left: 547px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 2848px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-158 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1158px;
+  min-width: 120px;
+  position: absolute;
+  top: 2486px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-7 {
+  height: 1px;
+  left: 34px;
+  object-fit: cover;
+  position: absolute;
+  top: 2295px;
+  width: 1px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-157 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 158px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 179px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .rectangle-14 {
+  background-color: var(--gallery);
+  border-radius: 26px;
+  height: 108px;
+  width: 108px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-nfl-alerts {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 179px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-156 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 343px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 184px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .bracket-mania-rec {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 184px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-155 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 558px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 113px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .league-of-legends-1 {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 183px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-154 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 713px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 168px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-nfl-chat {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 168px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-153 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 901px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 174px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-nba-chat {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 174px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .frame-152 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1103px;
+  min-height: 164px;
+  position: absolute;
+  top: 2576px;
+  width: 166px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fantasy-nfl-qa {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 166px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .mask-group {
+  height: 200px;
+  left: 101px;
+  position: absolute;
+  top: 2286px;
+  width: 1009px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .line-2 {
+  height: 1px;
+  left: 99px;
+  position: absolute;
+  top: 2818px;
+  width: 1341px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-8 {
+  height: 767px;
+  left: 80px;
+  object-fit: cover;
+  position: absolute;
+  top: 2512px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic-1 .fanfury-brand-assets-9 {
+  height: 1px;
+  left: 79px;
+  object-fit: cover;
+  position: absolute;
+  top: 211px;
+  width: 1px;
+}
+
+/* screen - fanfury-web-experience-visual-aesthetic */
+
+.fanfury-web-experience-visual-aesthetic {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group13 {
+  height: 2856px;
+  position: relative;
+  width: 1517px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-66 {
+  background-color: var(--white);
+  height: 708px;
+  left: 0;
+  position: absolute;
+  top: 108px;
+  width: 100%;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-130 {
+  background-color: var(--white);
+  height: 2856px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 79px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-131 {
+  background-color: var(--white);
+  height: 2856px;
+  left: 80px;
+  position: absolute;
+  top: 0;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic .line-2 {
+  height: 1px;
+  left: 99px;
+  position: absolute;
+  top: 2690px;
+  width: 1341px;
+}
+
+.fanfury-web-experience-visual-aesthetic .line-1 {
+  height: 1px;
+  left: 80px;
+  position: absolute;
+  top: 84px;
+  width: 1360px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-132 {
+  height: 456px;
+  left: 164px;
+  object-fit: cover;
+  position: absolute;
+  top: 156px;
+  width: 1201px;
+}
+
+.fanfury-web-experience-visual-aesthetic .popular-games {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 689px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .games-on-our-platform {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 1554px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .popular-channels {
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 2363px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .the-most-engaging-fantasy-app {
+  color: var(--electric-violet);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  left: 165px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 1895px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .see-why-millions-of {
+  left: 165px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1943px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .x2021-2022-mellow-des {
+  left: 547px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 2720px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-150 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1245px;
+  min-width: 120px;
+  position: absolute;
+  top: 684px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group {
+  border-radius: 12px;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic .caret {
+  height: 32px;
+  left: 8px;
+  position: absolute;
+  top: 8px;
+  width: 32px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-13 {
+  border-radius: 12px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group1 {
+  border-radius: 12px;
+  height: 48px;
+  margin-left: 24px;
+  position: relative;
+  width: 48px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-151-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1245px;
+  min-width: 120px;
+  position: absolute;
+  top: 1932px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-158 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 1245px;
+  min-width: 120px;
+  position: absolute;
+  top: 2358px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group2 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 165px;
+  min-height: 396px;
+  position: absolute;
+  top: 768px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-1 {
+  background-image: url(./assets/contibutorsss.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 192px;
+  position: relative;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-138 {
+  background: linear-gradient(180deg, rgb(16, 0, 92) 0%, rgba(16, 0, 92, 0) 100%);
+  border-radius: 24px 24px 0px 0px;
+  height: 192px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-football-2022 {
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 84px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .season-starts-sept2022 {
+  left: 20px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 155px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 15.0px;
+  margin-top: 23px;
+  min-width: 216px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-2 {
+  height: 47px;
+  position: relative;
+  width: 60px;
+}
+
+.fanfury-web-experience-visual-aesthetic .players {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .text-5 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-container {
+  height: 47px;
+  margin-left: 48px;
+  position: relative;
+  width: 108px;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-now {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .draft-opens {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .popular-ways-to-play {
+  align-self: flex-start;
+  letter-spacing: 0;
+  margin-left: 21px;
+  margin-top: 13px;
+  min-height: 16px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-151 {
+  align-items: flex-start;
+  display: flex;
+  height: 16px;
+  margin-top: 9px;
+  min-width: 231px;
+}
+
+.fanfury-web-experience-visual-aesthetic .redraft {
+  letter-spacing: 1.30px;
+  margin-top: -1px;
+  min-height: 16px;
+  min-width: 59px;
+}
+
+.fanfury-web-experience-visual-aesthetic .auction {
+  letter-spacing: 1.30px;
+  margin-left: 24px;
+  margin-top: -1px;
+  min-height: 16px;
+  min-width: 62px;
+}
+
+.fanfury-web-experience-visual-aesthetic .dynasty {
+  letter-spacing: 1.30px;
+  margin-left: 24px;
+  margin-top: -1px;
+  min-height: 16px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-3 {
+  align-items: center;
+  background-color: var(--electric-violet-2);
+  border-radius: 0px 0px 24px 24px;
+  display: flex;
+  height: 60px;
+  margin-top: 20px;
+  min-width: 223px;
+  padding: 14px 20px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-container {
+  height: 23px;
+  margin-bottom: 1.0px;
+  position: relative;
+  width: 87px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-2 {
+  height: 23px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-3 {
+  height: 23px;
+  left: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-4 {
+  height: 23px;
+  left: 32px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-5 {
+  height: 23px;
+  left: 48px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-6 {
+  height: 23px;
+  left: 64px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.fanfury-web-experience-visual-aesthetic .x1000-players {
+  align-self: flex-end;
+  letter-spacing: 0.26px;
+  line-height: 40px;
+  margin-left: 34px;
+  min-height: 25px;
+  min-width: 20px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group6 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 783px;
+  min-height: 396px;
+  position: absolute;
+  top: 768px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic .players-1 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .text-6 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-now-1 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .draft-opens-1 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-4 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 1092px;
+  min-height: 396px;
+  position: absolute;
+  top: 768px;
+  width: 233px;
+}
+
+.fanfury-web-experience-visual-aesthetic .players-2 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .text-7 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-now-2 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .draft-opens-2 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .players-3 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .text-8 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-now-3 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .draft-opens-3 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group9 {
+  align-items: center;
+  background-color: var(--gallery);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  left: 465px;
+  min-height: 422px;
+  padding: 0.0px 0;
+  position: absolute;
+  top: 755px;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group1-1 {
+  background-image: url(../public/img/rectangle-136-9@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 205px;
+  position: relative;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-138-1 {
+  background: linear-gradient(180deg, rgb(16, 0, 92) 0%, rgba(16, 0, 92, 0) 100%);
+  border-radius: 24px 24px 0px 0px;
+  height: 205px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 261px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-football-2022-1 {
+  left: 22px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 84px;
+  white-space: nowrap;
+  width: 227px;
+}
+
+.fanfury-web-experience-visual-aesthetic .season-starts-sept2022-1 {
+  left: 21px;
+  letter-spacing: 1.30px;
+  position: absolute;
+  top: 165px;
+  width: 228px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-container-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 15.99px;
+  margin-top: 25px;
+  min-width: 230px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group2-1 {
+  height: 50px;
+  position: relative;
+  width: 64px;
+}
+
+.fanfury-web-experience-visual-aesthetic .players-4 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.fanfury-web-experience-visual-aesthetic .text-9 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+  width: 51px;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-container-1 {
+  height: 50px;
+  margin-left: 51px;
+  position: relative;
+  width: 115px;
+}
+
+.fanfury-web-experience-visual-aesthetic .open-now-4 {
+  left: 0;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+  width: 115px;
+}
+
+.fanfury-web-experience-visual-aesthetic .draft-opens-4 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 102px;
+}
+
+.fanfury-web-experience-visual-aesthetic .popular-ways-to-play-1 {
+  align-self: flex-start;
+  letter-spacing: 0;
+  margin-left: 22.38px;
+  margin-top: 14px;
+  min-height: 17px;
+  width: 177px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-151-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 17px;
+  margin-left: 0;
+  margin-top: 10px;
+  min-width: 246px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group-5 {
+  align-items: flex-start;
+  background-color: var(--electric-violet-2);
+  border-radius: 0px 0px 24px 24px;
+  display: flex;
+  height: 64px;
+  margin-top: 21px;
+  min-width: 261px;
+  padding: 19.2px 21.3px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-container-1 {
+  height: 25px;
+  position: relative;
+  width: 93px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-2-1 {
+  height: 25px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-3-1 {
+  height: 25px;
+  left: 17px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-4-1 {
+  height: 25px;
+  left: 34px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-5-1 {
+  height: 25px;
+  left: 51px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-6-1 {
+  height: 25px;
+  left: 68px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.fanfury-web-experience-visual-aesthetic .x1000-players-1 {
+  align-self: center;
+  letter-spacing: 0.26px;
+  line-height: 40px;
+  margin-bottom: 2.0px;
+  margin-left: 36px;
+  min-height: 17px;
+  white-space: nowrap;
+  width: 118px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-139 {
+  height: 240px;
+  left: 165px;
+  object-fit: cover;
+  position: absolute;
+  top: 1224px;
+  width: 1200px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-7 {
+  height: 120px;
+  left: 184px;
+  object-fit: cover;
+  position: absolute;
+  top: 1636px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-football {
+  left: 165px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1763px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-7-1 {
+  height: 120px;
+  left: 432px;
+  object-fit: cover;
+  position: absolute;
+  top: 1632px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-basketball {
+  left: 403px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1763px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-7-2 {
+  height: 120px;
+  left: 679px;
+  object-fit: cover;
+  position: absolute;
+  top: 1632px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic .league-of-legends {
+  left: 647px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1763px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-7-3 {
+  height: 120px;
+  left: 926px;
+  object-fit: cover;
+  position: absolute;
+  top: 1632px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic .bracket-mania {
+  left: 917px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1763px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-7-4 {
+  height: 120px;
+  left: 1173px;
+  object-fit: cover;
+  position: absolute;
+  top: 1632px;
+  width: 120px;
+}
+
+.fanfury-web-experience-visual-aesthetic .dfs {
+  left: 1213px;
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1763px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group10 {
+  height: 216px;
+  left: 165px;
+  position: absolute;
+  top: 2004px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-140 {
+  background-color: var(--gallery);
+
+  border-image: linear-gradient(to bottom, rgb(169, 59, 255), rgba(169, 59, 255, 0)) 1;
+  border-radius: 36px;
+  height: 192px;
+  left: 22px;
+  position: absolute;
+  top: 24px;
+  transform: rotate(-180deg);
+  width: 414px;
+}
+
+.fanfury-web-experience-visual-aesthetic .ellipse-8 {
+  height: 72px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 72px;
+}
+
+.fanfury-web-experience-visual-aesthetic .lorem-ipsum-dolor-si {
+  left: 88px;
+  letter-spacing: 0.26px;
+  line-height: 40px;
+  position: absolute;
+  top: 51px;
+  white-space: nowrap;
+  width: 309px;
+}
+
+.fanfury-web-experience-visual-aesthetic .name {
+  left: 88px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 159px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group11 {
+  height: 216px;
+  left: 621px;
+  position: absolute;
+  top: 2004px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic .overlap-group12 {
+  height: 216px;
+  left: 1077px;
+  position: absolute;
+  top: 2004px;
+  width: 436px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-157 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 158px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 179px;
+}
+
+.fanfury-web-experience-visual-aesthetic .rectangle-14 {
+  background-color: var(--gallery);
+  border-radius: 26px;
+  height: 108px;
+  width: 108px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-nfl-alerts {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 179px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-156 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 373px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 184px;
+}
+
+.fanfury-web-experience-visual-aesthetic .bracket-mania-rec {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 184px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-155 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 588px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 183px;
+}
+
+.fanfury-web-experience-visual-aesthetic .league-of-legends-1 {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 183px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-154 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 803px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 168px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-nfl-chat {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 168px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-153 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1005px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 174px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-nba-chat {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 174px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-152 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 1206px;
+  min-height: 164px;
+  position: absolute;
+  top: 2448px;
+  width: 166px;
+}
+
+.fanfury-web-experience-visual-aesthetic .fantasy-nfl-qa {
+  letter-spacing: -0.40px;
+  line-height: 40px;
+  margin-top: 25px;
+  min-height: 30px;
+  min-width: 166px;
+  white-space: nowrap;
+}
+
+.fanfury-web-experience-visual-aesthetic .appstore {
+  height: 48px;
+  left: 1011px;
+  position: absolute;
+  top: 18px;
+  width: 166px;
+}
+
+.fanfury-web-experience-visual-aesthetic .googleplay {
+  height: 38px;
+  left: 1199px;
+  position: absolute;
+  top: 18px;
+  width: 133px;
+}
+
+.fanfury-web-experience-visual-aesthetic .frame-159 {
+  height: 660px;
+  left: 10px;
+  position: absolute;
+  top: 17px;
+  width: 36px;
+}
+
+:root {
+  --arapawa: #10005c;
+  --black: #000000;
+  --bon-jour: #e0e0e0;
+  --bright-turquoise: #06f3db;
+  --concrete: #f2f2f2;
+  --electric-violet: #a93bff;
+  --electric-violet-2: #7601f4;
+  --gallery: #eeeeee;
+  --gray: #828282;
+  --silver: #bdbdbd;
+  --starship: #ebf243;
+  --white: #ffffff;
+
+  --font-size-l: 15px;
+  --font-size-m: 11px;
+  --font-size-xl: 16px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 24px;
+  --font-size-xxxxl: 26px;
+  --font-size-xxxxxl: 44px;
+
+  --font-family-acumin_pro_condensed-black: "Acumin Pro Condensed-Black", Helvetica;
+  --font-family-sora: "Sora", Helvetica;
+}
+
+.sora-bold-bon-jour-13px {
+  color: var(--bon-jour);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sora-bold-white-13px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sora-semi-bold-bon-jour-13px {
+  color: var(--bon-jour);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sora-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sora-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.acuminprocondensed-black-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-acumin_pro_condensed-black);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.sora-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sora-bold-starship-20px {
+  color: var(--starship);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sora-semi-bold-bright-turquoise-13px {
+  color: var(--bright-turquoise);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sora-normal-white-13px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-arapawa-20px {
+  color: var(--arapawa);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-electric-violet-20px {
+  color: var(--electric-violet-2);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.acuminprocondensed-black-starship-40px {
+  color: var(--starship);
+  font-family: var(--font-family-acumin_pro_condensed-black);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.acuminprocondensed-black-white-40px {
+  color: var(--white);
+  font-family: var(--font-family-acumin_pro_condensed-black);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.acuminprocondensed-black-starship-30px {
+  color: var(--starship);
+  font-family: var(--font-family-acumin_pro_condensed-black);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.sora-semi-bold-electric-violet-13px {
+  color: var(--electric-violet);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sora-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-concrete-13px {
+  color: var(--concrete);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-semi-bold-starship-20px {
+  color: var(--starship);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.acuminprocondensed-black-starship-64px {
+  color: var(--starship);
+  font-family: var(--font-family-acumin_pro_condensed-black);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.sora-normal-concrete-20px {
+  color: var(--concrete);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-electric-violet-30px {
+  color: var(--electric-violet-2);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-silver-13px {
+  color: var(--silver);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sora-normal-gray-20px {
+  color: var(--gray);
+  font-family: var(--font-family-sora);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-2px-electric-violet {
+  border: 2px solid var(--electric-violet);
+}
+
+
+// 17-08-22 code css //
+
+.onmobile_nav {
+  display:none;
+}
