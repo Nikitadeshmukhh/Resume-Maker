@@ -1,6 +1,4 @@
 import React from "react";
-import { Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import resumeSvg from "../../assets/resume.svg";
 import styles from "./HeroBanner.module.css"
 const HeroBanner = ({ word }) => {

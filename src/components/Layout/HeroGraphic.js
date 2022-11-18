@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import heroGraphic from "../../assets/hero-graphic.svg";
 import bannerResponsiveImage from "../../assets/hero-graphic.svg";
 import Header from './Header';
 
